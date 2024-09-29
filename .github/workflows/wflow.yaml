@@ -8,8 +8,8 @@ jobs:
     name: run test and give a verdicct
     runs-on: ubuntu-latest
     steps:
-    - name: Install dependencies
-      run: make
+    - name: checkout repo
+      uses: actions/checkout@main
 
     - name: Set up Go
       uses: actions/setup-go@v4
