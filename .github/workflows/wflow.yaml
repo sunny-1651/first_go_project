@@ -3,12 +3,11 @@ Basic workflow to run tests
 on:
   push:
 
-
 jobs:
   run-test:
-    - name: run test and give a verdicct
-      runs-on: ubuntu-latest
-
+    name: run test and give a verdicct
+    runs-on: ubuntu-latest
+    steps:
     - name: Install dependencies
       run: make
 
