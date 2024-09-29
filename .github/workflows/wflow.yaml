@@ -1,0 +1,21 @@
+Basic workflow to run tests
+
+on:
+  push:
+
+
+jobs:
+  run-test:
+    - name: run test and give a verdicct
+      runs-on: ubuntu-latest
+
+    - name: Install dependencies
+      run: make
+
+    - name: Set up Go
+      uses: actions/setup-go@v4
+      with:
+        go-version: '1.22'
+
+    - name: run tests
+      run: make test
