@@ -19,5 +19,6 @@ func TestFileRWops(t *testing.T) {
 	if retrieved_deck.to_string(",") != d.to_string(",") {
 		t.Errorf("the dumped deck \n{%s} \ndoes not match loaded deck \n{%s}", retrieved_deck.to_string(", "), d.to_string(", "))
 	}
+	os.Remove("_deck_file_rw_testing")
 
 }
