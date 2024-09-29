@@ -7,8 +7,8 @@ import (
 	"strings"
 )
 
-func (d deck) string_to_file(filename string) error {
-	return ioutil.WriteFile(filename, []byte(d.to_string()), 0666)
+func (d deck) dump_deck_to_file(filename string) error {
+	return ioutil.WriteFile(filename, []byte(d.to_string(",")), 0666)
 }
 
 func load_deck_from_file(filename string) deck {

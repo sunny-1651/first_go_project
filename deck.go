@@ -58,8 +58,8 @@ func deal(d deck, size int) (deck, deck) {
 	return d, dealt_hand
 }
 
-func (d deck) to_string() string {
-	return strings.Join([]string(d), ",")
+func (d deck) to_string(seperator string) string {
+	return strings.Join([]string(d), seperator)
 }
 
 func (d deck) shuffle() {
