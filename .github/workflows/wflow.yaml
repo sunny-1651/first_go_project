@@ -1,4 +1,4 @@
-Basic workflow to run tests
+name: Basic workflow to run tests
 
 on:
   push:
